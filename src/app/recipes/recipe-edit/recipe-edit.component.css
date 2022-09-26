@@ -1,0 +1,17 @@
+button {
+    outline: none !important;
+    margin: 10px 6px 0 0;
+}
+
+button.delete-button {
+    margin: 0;
+}
+
+div#ingredients {
+    margin-block: 10px;
+}
+
+input.ng-invalid.ng-touched {
+    border-color: #f00;
+    background-color: #fee;
+}

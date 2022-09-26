@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-xs-12">
+        <form #f="ngForm" (ngSubmit)="onAddIngredient()">
+            <div class="row">
+                <div class="col-sm-5 form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" class="form-control" [(ngModel)]="nameBind" #name="ngModel" required>
+                </div>
+                <div class="col-sm-2 form-group">
+                    <label for="amount">Amount</label>
+                    <input type="number" id="amount" name="amount" class="form-control" [(ngModel)]="amountBind" #amount="ngModel" required number pattern="^[1-9]+[0+9]*$">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <button class="btn btn-success" type="submit" [disabled]="!f.valid">Add</button>
+                    <button class="btn btn-primary" type="button" (click)="onUpdate()" [disabled]="!f.valid || !checkName(name.value)">Update</button>
+                    <button class="btn btn-danger" type="button" (click)="onDeleteIngredient()" [disabled]="!f.valid">Delete</button>
+                    <button class="btn btn-default" type="button" (click)="clearFields()" [disabled]="(name.value === '' || name.value === undefined || name.value === null) && (amount.value === undefined || amount.value === null)">Clear</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

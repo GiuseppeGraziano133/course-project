@@ -1,0 +1,9 @@
+.accent {
+    border-left: 2px solid #fff;
+    padding-left: 5px;
+    margin-block: 2px;
+}
+
+li {
+    color: #555;
+}

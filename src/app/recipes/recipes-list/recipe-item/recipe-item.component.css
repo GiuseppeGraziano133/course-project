@@ -1,0 +1,28 @@
+img {
+    margin: 10px 0 0 5px;
+}
+
+.recipe {
+    color: #eee;
+    background-color: #333;
+    border-color: #222;
+}
+
+.recipe:focus {
+    color: #eee;
+    background-color: #333;
+    border-color: #222;
+}
+
+.recipe:hover {
+    color: #eee;
+    background-color: #444;
+}
+
+.recipe-title {
+    color: #eee !important;
+}
+
+.active {
+    background-color: #666 !important;
+}

@@ -1,0 +1,9 @@
+button {
+    outline: none !important;
+    margin-inline: 2px;
+}
+
+input.ng-invalid.ng-touched {
+    border-color: #f00;
+    background-color: #fee;
+}

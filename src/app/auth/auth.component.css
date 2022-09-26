@@ -1,0 +1,8 @@
+button {
+    margin-block: 10px;
+}
+
+div.buttons {
+    display: flex;
+    justify-content: space-between;
+}
